@@ -1,0 +1,55 @@
+.Header {
+    line-height: 100px;
+    background: #f2f2f2;
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            a {
+                display: block;
+                font-size: 0;
+
+                img {
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .GlobalGnb {
+            &>ul {
+                display: flex;
+                gap: 30px;
+
+                &>li {
+                    position: relative;
+
+                    a {
+                        display: block;
+                    }
+
+                    ul {
+                        display: none;
+                        position: absolute;
+                        inset: 100px auto auto 50%;
+                        transform: translate(-50%, 0);
+                        line-height: 40px;
+                        background: #f2f2f2;
+                        width: 150px;
+                        text-align: center;
+                        border: 3px solid #ddd;
+
+                        li~li {
+                            border-top: 1px solid #ddd;
+                        }
+                    }
+
+                    &:hover ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
