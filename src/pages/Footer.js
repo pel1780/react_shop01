@@ -67,6 +67,7 @@ background: #333;
 const FooterAddress = ({ DEFAULT }) => {
     return (
         <Address>
+
             주소 : {DEFAULT.address} 전화 : {DEFAULT.tel}
         </Address>
     )
